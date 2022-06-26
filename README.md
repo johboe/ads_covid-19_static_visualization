@@ -2,7 +2,7 @@ ads_covid-19_static_visualization
 ==============================
 
 Static visualization of covid cases for three countries.
-Note: Following the lecture principle, the ntoebook "Evaluation" contains all steps for a straight-forward delivery from data fetching up to the visualization.
+Note: Following the lecture principle, the notebook "Evaluation" contains all steps for a straight-forward delivery from data fetching up to the visualization.
 
 Project Organization
 ------------
