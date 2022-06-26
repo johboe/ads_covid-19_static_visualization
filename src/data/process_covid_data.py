@@ -56,8 +56,8 @@ def store_vaccinations_three_countries(countries: dict):
 
 if __name__ == '__main__':
     # define three countries to select (attention: not all countries have the same name in both DataFrames of cases and vaccinations)
-    # source of population data: datatopics.worldbank.org
-    countries = {"Germany":83240000, "Italy":59550000, "France":67390000}
+    # source of population data: data.worldbank.org
+    countries = {"Germany":83240000, "Italy":59550000, "Belgium":11544000}
     store_processed_cases()
     store_processed_vaccinations()
     store_cases_three_countries(countries)

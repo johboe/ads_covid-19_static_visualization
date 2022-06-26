@@ -57,14 +57,14 @@ def plot_relative_cases():
     """ Plot the relative cases for the three countries """
     df_cases_countries = pd.read_csv("../data/processed/COVID_cases_three_countries.csv", sep=";")
     title = "Relative Cases"
-    legend = {"Germany_relative":"Germany", "France_relative":"France", "Italy_relative":"Italy"}
+    legend = {"Germany_relative":"Germany", "Belgium_relative":"Belgium", "Italy_relative":"Italy"}
     plot_figure([datetime.strptime(each, '%m/%d/%y') for each in df_cases_countries["date"]], df_cases_countries.iloc[:,1:], title, "Time", "Relational cases [%]", legend,y_scale="linear", slider=False)
     
 def plot_relative_vaccinations():
     """ Plot the vaccination rates for the three countries """
     df_vaccinations_countries = pd.read_csv("../data/processed/COVID_vaccinations_three_countries.csv", sep=";")
-    title = "Vaccination Rates"
-    legend = {"Germany_relative":"Germany", "France_relative":"France", "Italy_relative":"Italy"}
+    title = "Vaccination Rates (2nd Dose)"
+    legend = {"Germany_relative":"Germany", "Belgium_relative":"Belgium", "Italy_relative":"Italy"}
     plot_figure(df_vaccinations_countries["date"], df_vaccinations_countries.iloc[:,1:], title, "Time", "Vaccination Rate [%]", legend, y_scale="linear", slider=False)
 
 if __name__ == "__main__":
